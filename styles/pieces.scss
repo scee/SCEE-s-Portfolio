@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+@keyframes spinX {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+@keyframes spinY {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes spinZ {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes spinZ-mod {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes darken {
+    0% {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 45%;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte);
+}
+
+:root{
+    --tr: all .5s ease-in-out;
+    --main-color: red;
+    --sec-color: white;
+    --thi-color: black;
+    --animacao: float 2s ease-in-out infinite;
+    --fonte:  'Montserrat Alternates';
+    
+}
+
+html{
+    
+    
+    body{
+        
+        background-color: var(--thi-color);
+        header{
+            
+            .master-header{
+                
+                .header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5rem;
+                    .header-img{
+                        
+                        .img{
+                            width: 150px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        main{
+            .main{
+                
+                .title{}
+                
+                .blocks-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .blocks{
+                        display: grid;
+                        grid-template-columns: repeat(5
+                        ,1fr);
+                        gap: .5rem;
+                        a{
+
+                            .block{
+                                background-color: white;
+                                background-size: contain;
+                                width: 250px;
+                                height: 250px;
+                                border-radius: 1rem;
+                                .block-img{
+                                    
+                                    img{
+                                        width: 100%;
+                                        border-radius: 1rem;
+                                    }
+                                }
+                                
+                                .block-txt{}
+                                
+                                
+                                
+                                
+                            }
+
+                            &:hover{
+                                transition: var(--tr);
+                        
+                                .block-img{
+                                    display: none;
+                                }
+                            }
+                        }
+                        
+
+                        //////////BACKGROUNDS DAS GRELHAS///////////////
+                        #i1{ background-image: url(../media/ATP/Triangles\ NV\ white\ FUNDO_WHITE.png); }
+                        #i2{ background-image: url(../media/ATP/NSPF\ Pattern2\ White.png); } 
+                        #i3{ background-image: url(../media/ATP/Lippy\ Y2C\ White.png); } 
+                        #i4{ background-image: url(../media/ATP/BadDecisions\ bLACK\ FUNDO_WHITE.png); } 
+                        
+                        #i5{ background-image: url(../media/ATP/Classic\ Pinty\ +\ Comics\ White.png); } 
+                        #i6{ background-image: url(../media/ATP/Bubbly\ NV\ BLACK\ FUNDO_WHITE.png); }
+                        #i7{ background-image: url(../media/ATP/Classic\ Pinty\ +\ Comics\ Black.png); }
+                        #i8{ background-image: url(../media/ATP/Butterfly\ Dirt.png); } 
+                        
+                        #i9{ background-image: url(../media/ATP/HER\ NV\ WHITE\ FUNDO_BLACK.png); }
+                        #i10{ background-image: url(../media/ATP/classic_scee_hoodie_v2_navy.png);}
+                        #i11{ background-image: url(../media/ATP/HEARTED_V2_HOODIE_NAVY_FRONT.png);}
+                        #i12{ background-image: url(../media/ATP/DONTCALLMEWHENYOURELOST_V2_WHITE.png);}
+
+                        #i13{ background-image: url(../media/ATP/Hipno\ White\ FundoWhite.png);}
+                        #i14{ background-image: url(../media/ATP/Miss\ Comics\ Black.png);}
+                        #i15{ background-image: url(../media/ATP/WEIRDWORLD\ Black\ Purple.png);}
+                        #i16{ background-image: url(../media/ATP/Created\ to\ Create\ Cammo\(sand\)[ALIENLESS].png);}
+                        
+                        #i17{ background-image: url(../media/ATP/Classic_c2c_hoodie_sand.png);}
+                        #i18{ background-image: url(../media/ATP/Comics2+Bloody.png);}
+                        #i19{ background-image: url(../media/ATP/Classic_scee_cammo_white.png);}
+                        #i20{ background-image: url(../media/ATP/CAESARS_CoverC_IRISH_GREEN.png);}
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    /////ISSO TUDO SÓ PRA OCULTAR A SCROLL BAR VERTICAL
+    scroll-behavior: smooth;
+    
+    scrollbar-width: none;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    } 
+    
+    
+}
+
+ 

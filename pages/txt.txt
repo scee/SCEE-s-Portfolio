@@ -1,0 +1,49 @@
+
+                                    <div class="new-designs">
+                                        
+                                        <div class="p-one">
+                                            <p>
+                                                As you can see, these aren't the coolest Logos. But at the time, we weren't really paying much attention to logos because we used more "graphical elements/assets" drawn by <span class="red">CZ</span> on his phone (and these grapical elements also weren't a big deal.. I mean, we knew nothing about design at all) so these logos didn't actually last long.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="break"></div>
+                                        
+                                        <div class="p-two">
+                                            <p>After a long <span class="red">break</span> on designs and clothes, <span class="red">CZ</span> started doing research autonomously and learned a thing or two through the years. </p>
+                                        </div>
+                                        
+                                        <div class="intro-txt">
+                                            <h2>Here are some of our latest Logos </h2>
+                                        </div>
+                                        
+                                        <div class="imgs">
+                                            
+                                            <div class="img-container">
+                                                <div class="img">
+                                                    <img src="/media/Transparents/4FACESWHITE.png" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="img-container">
+                                                <div class="img">
+                                                    <img src="/media/Transparents/bubly_black_and_white_white-border.png" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="img-container">
+                                                <div class="img">
+                                                    <img src="/media/Transparents/(BLACK)CLASSIC_SCEE.png" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="img-container">
+                                                <div class="img">
+                                                    <img src="/media/Transparents/hearted_v1_HD.png" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>

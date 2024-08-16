@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+@keyframes spinX {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+@keyframes spinY {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes spinZ {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes spinZ-mod {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes darken {
+    0% {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 45%;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte);
+}
+
+:root{
+    --tr: all .5s ease-in-out;
+    --main-color: red;
+    --sec-color: white;
+    --thi-color: black;
+    --animacao: float 2s ease-in-out infinite;
+    --fonte:  'Montserrat Alternates';
+}
+
+html{
+    
+    background-color: black;
+    body{
+        
+        background-color: inherit;
+        
+        
+        
+        background-color: inherit;
+        
+        header{
+            
+            .master-header{
+                
+                .header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5rem;
+                    .header-img{
+                        
+                        .img{
+                            width: 120px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        main{
+            
+            .main{
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                
+                .main-pic{
+                    
+                    
+                    .img{
+                        width: 400px;
+                        
+                        background-color: white;
+                        border-radius: 2rem;
+                        
+                        border: 8px solid white;
+                        img{
+                            width: 100%;
+                            border-radius: 2rem;
+                        }
+                        
+                    }
+                    
+                    
+                    .main-text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .title{
+                            
+                        }
+                    }
+                    
+                }
+                .sec{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .title{
+                        h1{
+                            text-align: center;
+                            color: white;}
+                        }
+                        .imgs{
+                            display: grid;
+                            grid-template-columns: repeat(6, 1fr);
+                            background-color: white;
+                            padding: .8rem;
+                            border-radius: .5rem;
+                            gap: .5rem;
+                            .img{
+                                border-radius: 2rem;
+                                width: 100px;
+                                
+                                img{
+                                    width: 100%;
+                                    border-radius: .5rem;
+                                }
+                                
+                            }
+                            
+                        }
+                        .pricenbuy{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 1rem;
+                            .price{
+                                color: white;
+                            }
+                            .buy{
+                                background-color: white;
+                                font-weight: bold;
+                                width: 200px;
+                                height: 75px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                            &:hover{
+                                background-color: rgb(201, 201, 201);
+                                color: var(--main-color);
+                            }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            .tabela{
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .measurements{
+                    margin-top: 2rem;
+                    width: 72%;
+                    margin-bottom: 2rem;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: white;
+                    border: 5px solid white;
+                    border-radius: 1rem;
+                    table{
+                        //min-width: 360px;
+                        
+                        thead{
+                            
+                        }
+                        tbody{
+                            
+                        }
+                        
+                        
+                    }
+                }
+                
+            }
+            
+            
+            
+            //independent vars
+            
+            
+            .red{
+                color: var(--main-color);
+            }
+            
+            .side-btns{
+                color: white;
+                background-color: none;
+                width: fit-content;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                
+                position: fixed;
+                top: 40%;
+                right: 1%;
+                text-align: center;
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-justify: auto;
+                }
+                .side-btn{
+                    font-weight: bolder;
+                    transition: var(--tr);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: .8rem;
+                    background-color: white;
+                    color: black;
+                    border: 1px solid white;
+                    box-shadow: 1px 2px 5px red;
+                    
+                    &:hover{
+                        transition: var(--tr);
+                        background-color: black;
+                        color: red;
+                        
+                    }
+                }
+                
+                .space-between{
+                    margin-top: .5rem;
+                }
+            }
+            
+            .scroll-down{
+                position: relative;
+                top: -8%;
+                right: 45%;
+                color: white;
+                animation: var(--animacao);
+                
+            }
+            
+        }
+        
+        
+        /////ISSO TUDO SÓ PRA OCULTAR A SCROLL BAR VERTICAL
+        scroll-behavior: smooth;
+        
+        scrollbar-width: none;
+        overflow-x: hidden;
+        ::-webkit-scrollbar {
+            display: none;
+        } 
+        
+        
+    }
+    
+    
